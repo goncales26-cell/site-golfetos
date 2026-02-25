@@ -4,58 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Golfeto's Massas Italianas | Votorantim</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-light">
 
-    <header>
+    <header class="d-flex justify-content-between align-items-center shadow-sm bg-white">
         <img src="logo.png" alt="Logotipo Golfeto's Massas" class="logo">
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#cardapio">Cardápio</a>
-            <a href="#sobre">Nossa História</a>
-            <a href="#localizacao">Onde Encontrar</a>
+        <nav class="d-none d-md-block">
+            <a href="#inicio" class="text-dark fw-bold text-decoration-none ms-4 custom-link">Início</a>
+            <a href="#cardapio" class="text-dark fw-bold text-decoration-none ms-4 custom-link">Cardápio</a>
+            <a href="#sobre" class="text-dark fw-bold text-decoration-none ms-4 custom-link">Nossa História</a>
         </nav>
     </header>
 
-    <section id="inicio" class="hero">
-        <div class="hero-overlay">
-            <h1>Tradição Italiana em Cada Detalhe</h1>
-            <p>Peça suas massas frescas ou congeladas e receba o sabor artesanal na sua casa.</p>
-            <a href="https://wa.me/5515999999999?text=Olá!+Vi+o+site+e+gostaria+de+fazer+um+pedido." target="_blank" class="btn-whatsapp">
-                🟢 Fazer Pedido via WhatsApp
+    <section id="inicio" class="hero position-relative d-flex align-items-center justify-content-center text-center">
+        <div class="hero-overlay p-5 rounded-4 text-white">
+            <h1 class="display-4 fw-bold mb-3">Tradição Italiana em Cada Detalhe</h1>
+            <p class="lead mb-4">Peça suas massas frescas ou congeladas e receba o sabor artesanal na sua casa.</p>
+            <a href="https://wa.me/5515999999999?text=Olá!+Vi+o+site+e+gostaria+de+fazer+um+pedido." target="_blank" class="btn btn-whatsapp btn-lg rounded-pill fw-bold">
+                <i class="bi bi-whatsapp me-2"></i> Fazer Pedido via WhatsApp
             </a>
         </div>
     </section>
 
-    <section id="cardapio" class="categorias">
-        <h2>Nossas Especialidades</h2>
-        <div class="cards-container">
-            <div class="card">
-                <h3>Massas Frescas</h3>
-                <a href="https://wa.me/5515999999999?text=Olá!+Quais+são+as+opções+de+massas+frescas+hoje?" class="btn-pedir">Ver opções no Whats</a>
-            </div>
-            <div class="card">
-                <h3>Massas Congeladas</h3>
-                <a href="https://wa.me/5515999999999?text=Olá!+Gostaria+de+ver+o+cardápio+de+massas+congeladas." class="btn-pedir">Ver opções no Whats</a>
+    <section id="cardapio" class="py-5 bg-light text-center">
+        <div class="container">
+            <h2 class="mb-5 fw-bold text-danger">Nossas Especialidades</h2>
+            <div class="row justify-content-center g-4">
+                
+                <div class="col-md-5 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 custom-card">
+                        <h3 class="fw-bold mb-4">Massas Frescas</h3>
+                        <a href="https://wa.me/5515999999999?text=Olá!+Quais+são+as+opções+de+massas+frescas+hoje?" class="btn btn-pedir rounded-pill mt-auto fw-bold">
+                            <i class="bi bi-whatsapp me-2"></i> Ver opções no Whats
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-5 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm p-4 rounded-4 custom-card">
+                        <h3 class="fw-bold mb-4">Massas Congeladas</h3>
+                        <a href="https://wa.me/5515999999999?text=Olá!+Gostaria+de+ver+o+cardápio+de+massas+congeladas." class="btn btn-pedir rounded-pill mt-auto fw-bold">
+                            <i class="bi bi-whatsapp me-2"></i> Ver opções no Whats
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="sobre" class="historia">
-        <div class="texto-historia">
-            <h2>Muito mais que massa. Tradição de família.</h2>
-            <p>Acreditamos que o almoço de domingo merece o verdadeiro sabor da Itália, todos os dias da semana. A Golfeto's nasceu do amor pela culinária artesanal...</p>
-        </div>
-        <div class="video-destaque">
-            <video src="video.mp4" controls width="100%" poster="capa.jpg"></video>
+    <section id="sobre" class="py-5 bg-white">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold text-danger mb-4">Muito mais que massa. Tradição de família.</h2>
+                    <p class="lead text-secondary">Acreditamos que o almoço de domingo merece o verdadeiro sabor da Itália, todos os dias da semana. A Golfeto's nasceu do amor pela culinária artesanal e do desejo de levar ingredientes frescos para a sua mesa.</p>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <video src="video.mp4" controls class="w-100 rounded-4 shadow-lg" poster="capa.jpg"></video>
+                </div>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Golfeto's Massas. Todos os direitos reservados.</p>
-        <p>Desenvolvido por <strong>GTI Soluções Digitais</strong></p>
+    <footer class="bg-dark text-light text-center py-4">
+        <div class="container">
+            <p class="mb-1">&copy; 2026 Golfeto's Massas. Todos os direitos reservados.</p>
+            <p class="mb-0">Desenvolvido por <strong class="text-danger">GTI Soluções Digitais</strong></p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
