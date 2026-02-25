@@ -4,8 +4,14 @@ body { background-color: #fcfcfc; color: #333; }
 
 /* 1. CABEÇALHO E MENU */
 header { display: flex; justify-content: space-between; align-items: center; padding: 15px 50px; background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-.logo { max-width: 140px; } /* Isso resolve a logo gigante! */
-nav a { text-decoration: none; color: #333; margin-left: 20px; font-weight: 600; transition: color 0.3s; }
+/* TROQUE ISSO: .logo { max-width: 140px; } */
+
+/* POR ISSO AQUI: */
+.logo {
+    max-width: 140px;
+    border-radius: 50%; /* Essa é a linha mágica que arredonda */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Bônus N3: Uma sombrinha suave para destacar ela do fundo branco */
+}
 nav a:hover { color: #d32f2f; } /* Vermelho Itália ao passar o mouse */
 
 /* 2. CAPA (HERO SECTION) */
